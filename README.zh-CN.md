@@ -47,6 +47,26 @@
 
 ## 快速开始
 
+### 方式一：一键安装（推荐）
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Minara-AI/excalidraw-skill/main/install.sh | bash
+```
+
+无需 clone 仓库，安装脚本会自动下载所有需要的文件。
+
+### 方式二：让 Claude 自动安装
+
+在 Claude Code 对话中直接说：
+
+```
+帮我安装 Excalidraw skill：https://github.com/Minara-AI/excalidraw-skill
+```
+
+Claude 会自动运行安装脚本，完成所有配置。
+
+### 方式三：从本地 clone 安装
+
 ```bash
 git clone git@github.com:Minara-AI/excalidraw-skill.git
 cd your-project

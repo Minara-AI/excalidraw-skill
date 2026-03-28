@@ -47,6 +47,26 @@ Describe what you want → get a polished Excalidraw PNG/SVG with hand-drawn Vir
 
 ## Quick Start
 
+### Option 1: One-command install (recommended)
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Minara-AI/excalidraw-skill/main/install.sh | bash
+```
+
+That's it — no need to clone the repo. The installer downloads everything automatically.
+
+### Option 2: Let Claude install it for you
+
+Just tell Claude Code in conversation:
+
+```
+Help me install the Excalidraw skill from https://github.com/Minara-AI/excalidraw-skill
+```
+
+Claude will run the installer and set everything up automatically.
+
+### Option 3: Install from local clone
+
 ```bash
 git clone git@github.com:Minara-AI/excalidraw-skill.git
 cd your-project
