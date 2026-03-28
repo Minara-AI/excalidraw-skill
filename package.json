@@ -1,0 +1,27 @@
+{
+  "name": "excalidraw-skill",
+  "version": "1.0.0",
+  "description": "Claude Code skill for generating hand-drawn style diagrams using Excalidraw",
+  "keywords": [
+    "claude-code",
+    "claude-code-skill",
+    "excalidraw",
+    "diagram",
+    "flowchart",
+    "architecture-diagram",
+    "hand-drawn",
+    "playwright"
+  ],
+  "homepage": "https://github.com/Minara-AI/excalidraw-skill",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Minara-AI/excalidraw-skill.git"
+  },
+  "license": "MIT",
+  "author": "Minara AI",
+  "files": [
+    "skill/",
+    "scripts/",
+    "install.sh"
+  ]
+}

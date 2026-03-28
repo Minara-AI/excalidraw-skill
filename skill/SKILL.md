@@ -1,6 +1,16 @@
 ---
 name: excalidraw
 description: Generate hand-drawn style diagrams using Excalidraw. Accepts natural language descriptions, generates Excalidraw scene JSON, and renders to PNG/SVG via headless Playwright. Use when user asks for diagrams, architecture charts, flowcharts, or visual illustrations.
+dependencies:
+  - Node.js >= 18
+  - "@playwright/test"
+  - Chromium (installed via Playwright)
+allowed-tools:
+  - Bash
+  - Read
+  - Write
+  - Edit
+  - Glob
 ---
 
 # Excalidraw Diagram Generator
