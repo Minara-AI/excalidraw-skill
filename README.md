@@ -1,13 +1,47 @@
 # Excalidraw Skill for Claude Code
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Claude Code](https://img.shields.io/badge/Claude_Code-Skill-blueviolet?logo=anthropic&logoColor=white)](https://claude.ai/claude-code)
+[![Excalidraw](https://img.shields.io/badge/Excalidraw-0.17.6-6965db?logo=excalidraw&logoColor=white)](https://excalidraw.com)
+[![Playwright](https://img.shields.io/badge/Playwright-%3E%3D1.40-45ba4b?logo=playwright&logoColor=white)](https://playwright.dev)
+[![Node.js](https://img.shields.io/badge/Node.js-%3E%3D18-339933?logo=node.js&logoColor=white)](https://nodejs.org)
+[![Platform](https://img.shields.io/badge/Platform-macOS%20%7C%20Linux-lightgrey)]()
+[![oh-my-claudecode](https://img.shields.io/badge/OMC-Optional-orange)](https://github.com/anthropics/claude-code-omc)
+
 [中文文档](README.zh-CN.md)
 
 **Generate hand-drawn diagrams from natural language in Claude Code.**
 
 Describe what you want → get a polished Excalidraw PNG/SVG with hand-drawn Virgil font, hachure fills, and monochrome-first aesthetics.
 
+![Example: cover](examples/cover.png)
+
+<details>
+<summary>More examples</summary>
+
 ![Example: architecture diagram](examples/three-layers.png)
 ![Example: workflow](examples/workflow.png)
+
+</details>
+
+### Tech Stack
+
+| Component | Technology | Purpose |
+|-----------|-----------|---------|
+| **Skill Engine** | [Claude Code](https://claude.ai/claude-code) | AI generates Excalidraw scene JSON from natural language |
+| **Renderer** | [Playwright](https://playwright.dev) + Headless Chromium | Loads Excalidraw in browser, exports PNG/SVG |
+| **Drawing Library** | [Excalidraw](https://excalidraw.com) 0.17.6 (via CDN) | Hand-drawn rendering engine |
+| **Fonts** | Virgil + Excalifont (bundled) | Hand-written style typefaces |
+| **Agent Orchestration** | [oh-my-claudecode](https://github.com/anthropics/claude-code-omc) (optional) | Multi-agent design/review pipeline |
+
+### Requirements
+
+| Requirement | Version | Note |
+|-------------|---------|------|
+| Node.js | >= 18 | Runtime |
+| Claude Code | Latest | CLI, desktop, or IDE extension |
+| OS | macOS / Linux | Windows via WSL |
+| Disk space | ~25MB | Font files |
 
 ---
 

@@ -1,13 +1,47 @@
 # Excalidraw Skill for Claude Code
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Claude Code](https://img.shields.io/badge/Claude_Code-Skill-blueviolet?logo=anthropic&logoColor=white)](https://claude.ai/claude-code)
+[![Excalidraw](https://img.shields.io/badge/Excalidraw-0.17.6-6965db?logo=excalidraw&logoColor=white)](https://excalidraw.com)
+[![Playwright](https://img.shields.io/badge/Playwright-%3E%3D1.40-45ba4b?logo=playwright&logoColor=white)](https://playwright.dev)
+[![Node.js](https://img.shields.io/badge/Node.js-%3E%3D18-339933?logo=node.js&logoColor=white)](https://nodejs.org)
+[![Platform](https://img.shields.io/badge/Platform-macOS%20%7C%20Linux-lightgrey)]()
+[![oh-my-claudecode](https://img.shields.io/badge/OMC-Optional-orange)](https://github.com/anthropics/claude-code-omc)
+
 [English](README.md)
 
 **用自然语言在 Claude Code 中生成手绘风格图表。**
 
 描述你想要的内容 → 自动生成带有手写字体、斜线填充、黑白极简风格的 Excalidraw PNG/SVG。
 
+![示例：封面图](examples/cover.png)
+
+<details>
+<summary>更多示例</summary>
+
 ![示例：架构图](examples/three-layers.png)
 ![示例：流程图](examples/workflow.png)
+
+</details>
+
+### 技术栈
+
+| 组件 | 技术 | 用途 |
+|------|------|------|
+| **技能引擎** | [Claude Code](https://claude.ai/claude-code) | AI 根据自然语言生成 Excalidraw 场景 JSON |
+| **渲染器** | [Playwright](https://playwright.dev) + 无头 Chromium | 在浏览器中加载 Excalidraw，导出 PNG/SVG |
+| **绘图库** | [Excalidraw](https://excalidraw.com) 0.17.6 (CDN) | 手绘风格渲染引擎 |
+| **字体** | Virgil + Excalifont（内置） | 手写风格字体 |
+| **Agent 编排** | [oh-my-claudecode](https://github.com/anthropics/claude-code-omc)（可选） | 多 agent 设计/审查流水线 |
+
+### 系统要求
+
+| 要求 | 版本 | 备注 |
+|------|------|------|
+| Node.js | >= 18 | 运行时 |
+| Claude Code | 最新版 | CLI、桌面应用或 IDE 扩展 |
+| 操作系统 | macOS / Linux | Windows 通过 WSL |
+| 磁盘空间 | ~25MB | 字体文件 |
 
 ---
 
