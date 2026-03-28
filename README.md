@@ -53,13 +53,19 @@ cd your-project
 bash /path/to/excalidraw-skill/install.sh
 ```
 
-Then in Claude Code:
+Then in Claude Code, use the `/excalidraw` slash command:
 
 ```
-"Draw an architecture diagram showing Client → API Gateway → Database"
+/excalidraw Draw an architecture diagram showing Client → API Gateway → Database
 ```
 
-That's it. Claude will generate the `.excalidraw` JSON, render it to PNG, review it, and iterate.
+Or just describe what you want in natural language — Claude will automatically detect diagram requests:
+
+```
+"Help me draw a flowchart for the CI/CD pipeline"
+```
+
+That's it. Claude will design the visual style, generate `.excalidraw` JSON, render it to PNG, review the output, and iterate until it looks good.
 
 ---
 

@@ -53,13 +53,19 @@ cd your-project
 bash /path/to/excalidraw-skill/install.sh
 ```
 
-然后在 Claude Code 中：
+然后在 Claude Code 中，使用 `/excalidraw` 斜杠命令：
 
 ```
-"画一个架构图，展示 Client → API Gateway → Database"
+/excalidraw 画一个架构图，展示 Client → API Gateway → Database
 ```
 
-就这么简单。Claude 会自动生成 `.excalidraw` JSON、渲染成 PNG、审查并迭代优化。
+或者直接用自然语言描述需求 — Claude 会自动识别绘图请求：
+
+```
+"帮我画一个 CI/CD 流水线的流程图"
+```
+
+就这么简单。Claude 会自动设计视觉风格、生成 `.excalidraw` JSON、渲染成 PNG、审查输出并迭代优化。
 
 ---
 
